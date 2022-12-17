@@ -4,7 +4,7 @@ import random
 
 
 list_num = []
-for i in range(10):
+for _ in range(10):
     a = random.randint(1, 10)
     list_num.append(a)
 

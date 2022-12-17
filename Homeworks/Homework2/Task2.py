@@ -7,14 +7,7 @@ num = int(input('Введите число: '))
 
 
 def mult(n):
-    if n == 1:
-        return 1
-    else:
-        return n * mult(n - 1)
+    return 1 if n == 1 else n * mult(n - 1)
 
-
-list = []
-for i in range(1, num + 1):
-    list.append(mult(i))
-
+list = [mult(i) for i in range(1, num + 1)]
 print(f"Набор произведений чисел от 1 до {num}:  {list}")

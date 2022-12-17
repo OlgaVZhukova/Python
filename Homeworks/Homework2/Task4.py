@@ -7,6 +7,10 @@ list_num = list(range(-n,n+1))
 print(list_num)
 
 
-with open('file.txt') as file:
-    data = file.read()
-    print(data)
+with open('file.txt', 'w') as data:
+    data.write('0\n')
+    data.write('3\n')
+    data.write('4')
+data.close()
+
+

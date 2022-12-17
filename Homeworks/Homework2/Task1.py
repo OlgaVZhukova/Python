@@ -3,8 +3,8 @@
 # 6782 -> 23
 # 0.56 -> 11
 
-print('Введите число: ')
-num = float(input())
+
+num = float(input('Введите число: '))
 
 
 def sum_nums(num):

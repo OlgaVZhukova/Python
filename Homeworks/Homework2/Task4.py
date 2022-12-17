@@ -6,4 +6,7 @@ n = int(input('Введите число: '))
 list_num = list(range(-n,n+1))
 print(list_num)
 
-#f = open('file.txt', 'r')
+
+with open('file.txt') as file:
+    data = file.read()
+    print(data)
